@@ -1,0 +1,118 @@
+body{
+	background-color: lightskyblue;
+}
+
+#container{
+	border-bottom: 3px solid saddlebrown;
+	height: 250px;
+	width: 600px;
+	overflow: hidden;
+	position: relative;
+}
+
+#car{
+	position: absolute;
+	width: 20%;
+	left: 25%;
+	bottom: 0;
+	z-index: 5;
+	animation-name: animationCar;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes animationCar{
+	0%{
+		/*transform: rotate(5deg);*/
+		width: 15%;
+	}
+	50%{
+		/*transform: rotate(-10deg);*/
+		width: 17%;
+	}
+	100%{
+		/*transform: rotate(5deg);*/
+		width: 15%;
+	}
+}
+
+#tree{
+	position: absolute;
+	width: 24%;
+	bottom: 0;
+	z-index: 1;
+	animation-name: animationTree;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: -2s;
+}
+
+@keyframes animationTree{
+	0%{
+		right: -200px;
+	}
+	100%{
+		right: 700px;
+	}
+}
+
+#mountains{
+	position: absolute;
+	width: 7%;
+	bottom: 0;
+	z-index: 2;
+	animation-name: animationMountain;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes animationMountain{
+	0%{
+		right: -200px;
+	}
+	100%{
+		right: 700px;
+	}
+}
+
+#grass{
+	position: absolute;
+	width: 5%;
+	bottom: 0;
+	z-index: 6;
+	animation-name: animationGrass;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-delay: -1s;
+}
+
+@keyframes animationGrass{
+	0%{
+		right: -200px;
+	}
+	100%{
+		right: 700px;
+	}
+}
+
+#cloud{
+	background:url(clouds.png) repeat-x 0 / 100% auto;
+	height: 200px;
+	animation-name: animationClouds;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@keyframes animationClouds{
+	0%{
+		background-position: 100vw 0;
+	}
+	100%{
+		background-position: 0 0;
+	}
+}
